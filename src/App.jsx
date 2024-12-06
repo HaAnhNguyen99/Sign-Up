@@ -60,7 +60,7 @@ function App() {
   };
 
   return (
-    <section className="p-2 flex md:flex-row flex-col gap-2 border border-white mt-[20vh] rounded-lg shadow-slate-500 shadow-2xl md:max-w-[60vw] md:max-h-[60vh] mx-auto my-auto">
+    <section className="p-2 flex md:flex-row flex-col h-fit gap-2 border border-white mt-[20vh] rounded-lg shadow-slate-500 shadow-2xl md:max-w-[60vw] md:max-h-[70vh] mx-auto my-auto">
       <div className="bg-StepBg border-white rounded-lg  border shadow-md">
         <StepNav steps={steps} currentStep={currentStep} />
       </div>

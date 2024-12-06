@@ -19,7 +19,7 @@ const StepComponent = ({ number, name, isPrev, id }) => {
 
 export const StepNav = ({ steps, currentStep }) => {
   return (
-    <div className="p-4 my-[2rem] flex md:flex-col flex-row justify-between md:justify-normal gap-2 md:gap-10 ">
+    <div className="p-4 my-[2rem] flex md:flex-col flex-row justify-between md:justify-normal gap-2 md:gap-10 mb-2">
       {steps.map((step, index) =>
         index <= currentStep ? (
           <StepComponent number={step.id} name={step.name} id={index} key={index} isPrev={true} />

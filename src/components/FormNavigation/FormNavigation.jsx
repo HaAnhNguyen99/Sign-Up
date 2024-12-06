@@ -14,7 +14,7 @@ export const FormNavigation = ({ next, prev, total, currentStep }) => {
       <button
         size="icon"
         onClick={next}
-        type={currentStep === total - 2 ? 'submit' : 'button'}
+        type={currentStep === total - 1 ? 'submit' : 'button'}
         value={currentStep === total ? 'Submit' : 'Next'}
         className="rounded shadow-sm cursor-pointer shadow-black px-2 py-1 hover:opacity-85 active:scale-95 transform transition-all hover:shadow-none hover:border hover:border-bgPrimary">
         <ChevronRight />
