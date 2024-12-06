@@ -36,6 +36,19 @@ export const Contact = ({ register, errors }) => {
         />
         {errors.phone && <p className="text-red-600">{errors.phone.message}</p>}
       </div>
+      <div className="mt-4 mb-8">
+        <Label htmlFor="tel">Address</Label>
+        <Input
+          aria-invalid={errors.address ? 'true' : 'false'}
+          id="tel"
+          placeholder="e.g.0968127409"
+          className={'mt-2'}
+          {...register('address', {
+            required: 'Please enter your address',
+          })}
+        />
+        {errors.address && <p className="text-red-600">{errors.address.message}</p>}
+      </div>
     </div>
   );
 };

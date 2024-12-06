@@ -17,7 +17,7 @@ function App() {
     {
       id: 'Step 2',
       name: 'Contact',
-      field: ['email', 'phone'],
+      field: ['email', 'phone', 'address'],
     },
     {
       id: 'Step 3',
